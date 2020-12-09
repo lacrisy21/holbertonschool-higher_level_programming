@@ -34,9 +34,9 @@ Here you can find the practice to learn higher level programming (Python)
 ## Description 🚀
 
 Python programming language provides following types of loops to handle looping requirements. Python provides three ways for executing the loops. While all the ways provide similar basic functionality, they differ in their syntax and condition checking time
-1| While Loop
-2| For Loop
-3| If...else statement
+- While Loop
+- For Loop
+- If...else statement
 
 ## Built with 🛠️
 - Python 3.4
