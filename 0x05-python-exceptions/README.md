@@ -62,5 +62,5 @@ Check who contributed to this project [here](https://github.com/your/project/con
 <b>Holberton School - Medellin, Colombia<b><br>
 </p>
 <p align="center">
-<b>December, 2021 🐔<b>
+<b>January, 2021 🐔<b>
 </p>
