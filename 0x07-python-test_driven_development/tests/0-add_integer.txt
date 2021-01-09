@@ -1,0 +1,93 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# input 2 int
+>>> add_integer(1, 2)
+3
+
+# input 2 int, one is negative
+>>> add_integer(100, -2)
+98
+
+# input float and negative int
+>>> add_integer(100.3, -2)
+98
+
+# input float and a character
+>>> add_integer(100.3, "h")
+Traceback (most recent call last):
+	  ...
+TypeError: b must be an integer
+
+# input float and a character
+>>> add_integer("h", 100.3)
+Traceback (most recent call last):
+          ...
+TypeError: a must be an integer
+
+# input int and string
+>>> add_integer(10, "hello")
+Traceback (most recent call last):
+          ...
+TypeError: b must be an integer
+
+# input no args
+>>> add_integer()
+Traceback (most recent call last):
+          ...
+TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+
+# input one arg
+>>> add_integer(1)
+Traceback (most recent call last):
+          ...
+TypeError: add_integer() missing 1 required positional argument: 'b'
+
+# input None None
+>>> add_integer(None, None)
+Traceback (most recent call last):
+          ...
+TypeError: a must be an integer
+
+# input None
+>>> add_integer(None)
+Traceback (most recent call last):
+          ...
+TypeError: add_integer() missing 1 required positional argument: 'b'
+
+# input int None
+>>> add_integer(2, None)
+Traceback (most recent call last):
+          ...
+TypeError: b must be an integer
+
+# input inf float
+>>> add_integer(1, float('inf'))
+Traceback (most recent call last):
+	  ...
+OverflowError: cannot convert float infinity to integer
+
+# input negative inf float
+>>> add_integer(1, -float('inf'))
+Traceback (most recent call last):
+          ...
+OverflowError: cannot convert float infinity to integer
+
+# input negative inf float
+>>> add_integer(float('inf'), float('inf'))
+Traceback (most recent call last):
+          ...
+OverflowError: cannot convert float infinity to integer
+
+# input letter
+>>> add_integer(a, 2)
+Traceback (most recent call last):
+	  ...
+NameError: name 'a' is not defined
+
+# input Boolens
+>>> add_integer(True, 1)
+2
+
+# input Boolens
+>>> add_integer(True, False)
+1
